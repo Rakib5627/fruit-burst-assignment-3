@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/e55782359a.js" crossorigin="anonymous"></script>
+
     <!-- tailwind and daisy ui-- -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,12 +41,12 @@
                         </ul>
                     </div>
                     <div class="flex justify-center items-center md:hidden">
-                       <img src="images/logo.png" alt="" width="30px"> 
+                       <img src="./images/logo.png" alt="" width="30px"> 
                        <a class="normal-case text-2xl font-bold">Fruit Burst</a>
                     </div>
                 </div>
                 <div class="hidden md:flex justify-center items-center gap-4">
-                      <img src="images/logo.png" alt="" width="40px"> 
+                      <img src="./images/logo.png" alt="" width="40px"> 
                        <a class="normal-case text-4xl font-bold">Fruit Burst</a>
                 </div>
                 <div class="">              
@@ -71,13 +74,13 @@
         <!-- banner part -->
 
 
-        <div class="my-20 text-center">
+        <div class="z-10 my-20 text-center">
             <div class="">
                 
             </div>
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="hero w-full" style="background-image: url(/images/banner1.png);">
+                    <div class="hero w-full" style="background-image: url(./images/banner1.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                           <div class="max-w-md">
@@ -93,7 +96,7 @@
                   </div>
                 </div> 
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div class="hero w-full" style="background-image: url(/images/banner2.png);">
+                    <div class="hero w-full" style="background-image: url(./images/banner2.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                           <div class="max-w-md">
@@ -109,7 +112,7 @@
                   </div>
                 </div> 
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div class="hero w-full" style="background-image: url(/images/banner3.png);">
+                    <div class="hero w-full" style="background-image: url(./images/banner3.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                           <div class="max-w-md">
@@ -125,7 +128,7 @@
                   </div>
                 </div> 
                 <div id="slide4" class="carousel-item relative w-full">
-                    <div class="hero w-full" style="background-image: url(/images/banner4.png);">
+                    <div class="hero w-full" style="background-image: url(./images/banner4.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                           <div class="max-w-md">
@@ -141,18 +144,123 @@
                   </div>
                 </div> 
                 <div id="slideforresponsive" class="carousel-item relative w-full">
-                  <img src="/images/banner4.png" class="" />
+                  <img src="./images/banner4.png" class="" />
                 </div>
                 
                 </div>
               </div>
-              
+
+
+              <div class="hidden md:flex text-center relative justify-around shadow-lg z-20 bg-white py-6 -mt-32 mx-36">
+                <div>
+                    <img src="./images/fruit1.png" alt="">
+                    <p>Grapes</p>
+                </div>
+                <div>
+                    <img src="./images/fruit2.png" alt="">
+                    <p>Orange</p>
+                </div>
+                <div>
+                    <img src="./images/fruit3.png" alt="">
+                    <p>Mango</p>
+                </div>
+                <div>
+                    <img src="./images/fruit4.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div>
+                    <img src="./images/fruit5.png" alt="">
+                    <p>Pomegranate</p>
+                </div>
+                
+              </div>        
+    </header>
+    <main class="mx-5 lg:mx-32">
+        <!-- deal of the day -->
+        <div class="mt-20">
+            <div class="block md:flex items-center justify-between">
+                <div class="text-center md:text-left">
+                    <h3 class="text-4xl">Deal of the day</h3>
+                    <p>Get the best deals and offers of today</p>
+                    <p>Click on details to know more.</p>
+                </div>
+                <div class="flex-auto flex items-center justify-center md:justify-end gap-3 md:gap-6 mt-16 lg:mt-0">
+                    <div class="text-center">
+                        <h3 class="text-3xl md:text-5xl">29</h3>
+                        <p>Day</p>
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="text-center">
+                        <h3 class="text-2xl md:text-5xl">15</h3>
+                        <p>Hour</p>
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="text-center">
+                        <h3 class="text-2xl md:text-5xl">25</h3>
+                        <p>Minute</p>
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="text-center">
+                        <h3 class="text-2xl md:text-5xl">08</h3>
+                        <p>Second</p>
+                    </div>
+                </div>
+                
+            </div>
         </div>
 
-
-          
-    </header>
-    
+        <!-- deal cards -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="card w-auto bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-auto bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-auto bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-auto bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </main>
 </body>
 </html>
 
