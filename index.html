@@ -16,7 +16,7 @@
 
 
     <style>
-        .lato{
+        *{
             font-family: 'Lato', sans-serif;
         }
     </style>
@@ -24,6 +24,95 @@
 </head>
 
 <body>
+    <header class="mx-5 lg:mx-32">
+        <!-- nav bar part -->
+        <div class="lg:text-white lg:bg-red-400 lg:rounded-full lg:px-5 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between">
+                    <div class="hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 font-medium">
+                          <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center items-center md:hidden">
+                       <img src="images/logo.png" alt="" width="30px"> 
+                       <a class="normal-case text-2xl font-bold">Fruit Burst</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex justify-center items-center gap-4">
+                      <img src="images/logo.png" alt="" width="40px"> 
+                       <a class="normal-case text-4xl font-bold">Fruit Burst</a>
+                </div>
+                <div class="">              
+                    <div class="relative form-control hidden md:flex flex-wrap-reverse">
+                        <input type="text" placeholder="Search here" class="input input-bordered w-36 md:w-auto rounded-full" />
+                        <button class="absolute btn btn-ghost btn-circle text-black">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        </button>
+                    </div>
+                    <div class="dropdown md:hidden dropdown-end">
+                        <button class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                          </button>
+                       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                         <li><a>Item 1</a></li>
+                         <li><a>Item 1</a></li>
+                         <li><a>Item 1</a></li>
+                         <li><a>Item 3</a></li>
+                       </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- banner part -->
+
+
+        <div class="my-20">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/images/banner1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn  bg-black text-white btn-circle">❮</a> 
+                    <a href="#slide2" class="btn  bg-black text-white btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="/images/banner2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn bg-black text-white btn-circle">❮</a> 
+                    <a href="#slide3" class="btn  bg-black text-white btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="/images/banner3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn  bg-black text-white btn-circle">❮</a> 
+                    <a href="#slide4" class="btn  bg-black text-white btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="/images/banner4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn  bg-black text-white btn-circle btn-circle">❮</a> 
+                    <a href="#slide1" class="btn  bg-black text-white btn-circle btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <h3 class="text-5xl font-semibold">Exotic tastes at your <br> doorstep</h3>
+                <p class="py-3">We supply highly quality organic products</p>
+                <button class="btn bg-red-500 text-white btn-secondary">Shop Now</button>
+              </div>
+        </div>
+
+
+          
+    </header>
     
 </body>
 </html>
+
